@@ -32,6 +32,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Dalvik heap configurations
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
+# Radio
+BOARD_HAVE_RADIO := true
+
 # Device product elements
 include $(LOCAL_PATH)/product/*.mk
 
